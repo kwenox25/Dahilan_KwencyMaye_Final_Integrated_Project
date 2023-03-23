@@ -1,0 +1,515 @@
+#main-logo {
+    height: 60px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#burger-con {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+}
+
+#main-nav {
+    display: none;
+  
+}
+
+#cart {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px;
+}
+
+#main-header {
+    top: 0;
+    height: 90px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    /* position: sticky; */
+    z-index: 999999 !important;
+    background-color: white;
+}
+#hero-con {
+    background-color: #292929;
+    height: 496px;
+}
+
+#getStarted {
+    height: 40px;
+    grid-row: 3/4;
+    border-radius: 50px;
+}
+
+#shopOnline {
+    height: 40px;
+    grid-row: 4/4;
+    border-radius: 50px;
+}
+#hero-h3 {
+    grid-row: 2/3;
+    height: 218px;
+}
+#features-con {
+    background-color: #DBDBDB;
+    height: 919px;
+}
+
+#features-h2 {
+    margin-top: 15px;
+    height: 54px;
+    text-align: center;
+}
+
+.feature {
+    border-radius: 20px 0 0 0;
+    height: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#products-con {
+    height: 424px;
+    color: white;
+}
+
+#products-h2 {
+    margin-top: 15px;
+    height: 54px;
+}
+
+.product {
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+.product-desc {
+    height: 69px;
+}
+
+#product2, #product3, #product4 {
+    display: none;
+}
+
+.dot-slider {
+    text-align: center;
+}
+.dot {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot-slider .dot:first-child {
+    background-color: black;
+}
+
+.aboutUs-image {
+    height: 291px;
+    margin-bottom: 20px;
+}
+
+#aboutUs {
+    font-size: 15px;
+    height: 238px;
+    margin-bottom: 20px;
+    
+}
+
+#reConnect {
+    font-size: 15px;
+    height: 143px;
+    margin-bottom: 20px;
+   
+}
+
+.aboutus-parag {
+
+    padding: 0;
+    background-color: grey;
+    color: white;
+    
+}
+
+#ourPartners-h2 {
+    height: 54px;
+}
+
+#ourPartners {
+    height: 593px;
+}
+
+.ourPartners-logo {
+    margin-top: 50px;
+    height: 130px;
+}
+
+
+#testimonialsCon {
+    grid-row: 2/3;
+    grid-column: 2/11;
+
+}
+.content {
+    /* display: grid; */
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+
+    z-index: 3;
+    background-color: #2c2c2c;
+    /* background-image: url(../images/subsribe-image.png); */
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 8px 15px black;
+    grid-row: 1/3;
+}
+
+#testimonial-con {
+    margin-top: 50px;
+    height: 561px;
+    border-radius:  0  0 50px 50px;
+    z-index: 3;
+    position: absolute;
+}
+
+#productAd {
+    grid-row: 1/3;
+    height: 200px;
+}
+
+#addtoCart {
+    grid-row: 1/3;
+    height: 69px;
+    margin-top: 100px;
+}
+
+#testimonialContent {
+    margin-top: 200px;
+    grid-row: 2/3;
+    height: 168px;
+    
+}
+
+#testimonialPic {
+    height: 50px;
+    grid-row: 3/3;
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+}
+
+#testimonialUser {
+    color: black;
+    height: 50px;
+    grid-row: 3/3;
+    background-color: white;
+}
+
+#footer-con {
+   margin-top: 563px;
+   padding-top: 42px;
+    z-index: 0;
+    position: relative;
+    background-color: black;
+    height: 900px;
+}
+
+#footer-logo {
+    margin-top: 30px;
+    height: 50px;
+}
+
+#email {
+    margin-top: 10px;
+}
+
+#email-submit {
+    margin-top: 10px;
+}
+
+#quicklinks, #support {
+    margin-top: 30px;
+    height: 132px;
+}
+
+#companyInfo {
+    margin-top: 30px;
+    height: 200px;
+}
+
+#socialMediaIcons {
+    margin-top: 30px;
+    height: 61px;
+}
+
+.hr-style {
+    margin-bottom: 30px;
+    border-left: 0;
+    height: 3px;
+    background-color: black;
+}
+
+@media screen and (min-width: 768px) {
+
+    #burger-con {
+        display: none;
+    }
+    
+    #main-logo {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 60px;
+        top: 0;
+    }
+
+    #main-nav {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 60px;
+        display: block;
+    }
+    
+
+    #hero-con {
+        background-color: #292929;
+        height: 536px;
+    }
+
+    #shopOnline, 
+    #getStarted {
+        grid-row: 3/3;
+        height: 71px;
+    }
+
+    #features-con {
+        height: 416px;
+    }
+
+    #features-box {
+        margin-top: 50px; 
+    }
+
+    #products-con {
+        height: 437px;
+       
+    }
+    .product {
+        height: 170px;
+        margin-bottom: 20px;
+    }
+
+    #product2, #product3, #product4 {
+        display: block;
+    }
+    .aboutUs-image {
+        height: 291px;
+    }
+    .aboutus-parag {
+        font-size: 10px;
+        background-color: grey;
+        color: white;
+        
+    }
+
+    #aboutUs {
+        margin: auto;
+    }
+    
+    #reConnect {
+        margin: auto;
+    }
+
+    #ourPartners {
+        height: 318px;
+    }
+
+    .ourPartners-logo {
+        height: 106px;
+    }
+    #productAd {
+        height: 224px;
+    }
+    
+    #testimonial-con {
+    margin-top: 50px;
+    height: 443px;
+    border-radius:  0  0 50px 50px;
+    z-index: 3;
+    position: absolute;
+    }
+
+
+    #testimonialPic {
+        height: 43px;
+        color: black;
+    }
+
+    #testimonialUser {
+        height: 43px;
+        color: black;
+    }
+
+    #testimonialContent {
+        margin-top: 145px;
+    }
+
+    #footer-con {
+        margin-top: 386px;
+        padding-top: 116px;
+         z-index: 0;
+         position: relative;
+         background-color: black;
+         height: 350px;
+     }
+     
+
+    #email {
+        margin-top: 0;
+        height: 24px;
+    }
+
+    #email-submit {
+        
+        margin-top: 0;
+        height: 24px;
+    }
+
+    #quicklinks {
+        grid-row: 1/3;
+    }
+
+    #support {
+        grid-row: 1/3;
+    }
+
+    #companyInfo {
+        height: 81px;
+        grid-row: 1/3;
+    }
+
+    #socialMediaIcons {
+        margin-top: 0;
+        grid-row: 3/3;
+        height: 24px;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+    #main-logo {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 60px;
+        top: 0;
+    }
+
+    #burger-con {
+        display: none;
+    }
+    #hero-con {
+        background-color: #292929;
+        height: 621px;
+    }
+
+    #features-con {
+        
+        height: 387px;
+    }
+   
+    #products-con {
+        height: 640px;
+       
+    }
+
+    .product {
+        height: 255px;
+        margin-bottom: 20px;
+    }
+
+    .aboutUs-image {
+        height: 331px;
+    }
+
+    .aboutus-parag {
+        font-size: 12px;
+        padding: 0;
+        background-color: grey;
+        color: white;
+    }
+
+    #aboutUs {
+        margin: auto;
+    }
+    
+    #reConnect {
+        margin: auto;
+    }
+
+    #ourPartners {
+        height: 370px;
+    }
+
+    #testimonialContent {
+        margin-top: 247px;
+        height: 252px;
+    }
+
+    #testimonial-con {
+        margin-top: 50px;
+        height: 647px;
+        border-radius:  0  0 50px 50px;
+        z-index: 3;
+        position: relative;
+    }
+
+    #productAd {
+        margin-top: 50px;
+        height: 274px;
+    }
+
+    #addtoCart {
+        margin-top: 200px;
+    }
+
+    #testimonialPic {
+        height: 70px;
+    }
+
+    #testimonialUser {
+        height: 70px;
+    }
+
+    #footer-con {
+        margin-top: -50px;
+        padding-top: 74px;
+        z-index: 0;
+        position: relative;
+        background-color: black;
+        height: 350px;
+     }
+
+
+    #companyInfo {
+        height: 81px;
+        grid-row: 1/3;
+    }
+
+    #socialMediaIcons {
+        grid-row: 3/3;
+    }
+
+   
+
+
+}
+
