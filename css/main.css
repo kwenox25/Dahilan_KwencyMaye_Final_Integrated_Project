@@ -509,7 +509,34 @@
     }
 
    
+    #team-bio {
+        height: 600px;
+        background-color: #0088CA;
+    }
 
-
+    .no {
+        text-align: center;
+        
+    }
+    .no-box {
+        
+        font-size: 60px;
+        grid-column: 6/7;
+    }
+    
+    .btn {
+        background-color: rgb(179, 179, 179);
+    }
+    
+    .btn:hover {
+        color: white;
+        background-color: green;
+    }
+    button {
+        margin-right: 50px;
+    }
+    .buttons {
+        grid-column: 5/9;
+    }
 }
 
