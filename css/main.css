@@ -3,20 +3,63 @@
     position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 30px;
 }
 
-#burger-con {
-    margin-top: 20px;
+#main-nav-mobile {
+    
+    grid-column: 1/-1;
+}
+
+
+#main-nav-mobile label img {
+	background: url(../images/burger.svg) center no-repeat;
+	border: 0px;
+	width: 50px;
+	height: 50px;
+	transition: all .5s ease;
+    margin-top: 15px;
     margin-bottom: 20px;
-    height: 60px;
-    position: absolute;
-    top: 0;
+    cursor: pointer;
 }
 
-#main-nav {
+#main-nav-mobile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ #main-nav-mobile li a {
+     display: block;
+     padding: 10px 0 10px 0;
+     text-align: center;
+     color: #626262;
+ }
+ 
+ #main-nav-mobile li {
+     border-bottom: 1px solid #efefef;
+ }
+ 
+ #main-nav-mobile li:first-child {
+     border-top: 1px solid #efefef;
+ }
+ 
+ #main-nav-mobile li:last-child {
+     margin-bottom: 10px;
+ }
+
+#burger-con, #main-nav-mobile input {
     display: none;
-  
 }
+
+ #main-nav-mobile input:checked ~ #burger-con {
+    display: block;
+ }
+
+ #main-nav-mobile input:checked ~ label img{
+    transform: rotate(90deg);
+ }
+
 
 #cart {
     margin-top: 20px;
@@ -31,7 +74,8 @@
     margin-bottom: 20px; */
     /* position: sticky; */
     z-index: 999999 !important;
-    background-color: white;
+    background-color: #F3EBE0;
+
 }
 #hero-con {
     background-color: #292929;
@@ -274,9 +318,56 @@
         margin-top: 20px;
         margin-bottom: 20px;
         height: 60px;
-        display: block;
+        /* display: block; */
+        align-self: center;
+        /* margin-left: 30px; */
+        position: relative;
+    }
+
+    #main-nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #main-nav ul li {
+        display: inline;
+        padding-left: 25px;
+        
     }
     
+    #main-nav ul li a {
+        text-decoration: none;
+        transition: all .5s ease-in-out;
+        color: #435350;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    #main-nav ul li a:hover {
+        color:  #F6871F;
+    }
+    
+    .contact-now {
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #F6871F;
+        font-size: 14px;
+        font-weight: 400;   
+    }
+    
+    #contact-now-top {
+        color: white;
+    }
+    
+    #contact-now-top:hover {
+        background-color: #F6871F;
+        color: #435350;
+    }
+    
+    #main-nav-mobile {
+        display: none;
+    }
 
     #hero-con {
         background-color: #292929;
@@ -411,6 +502,10 @@
         margin-bottom: 20px;
         height: 60px;
         top: 0;
+    }
+
+    #main-nav-mobile {
+        display: none;
     }
 
     #burger-con {

@@ -6,17 +6,53 @@
     <title>Welcome to QUATRO</title>
     <!-- Link to reset or normalize before main.css
     only choose one -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
     <h1 class="hidden">Welcome to QUATRO</h1>
     <header class="grid-con" id="main-header">
-        <div class="box col-start-2 col-end-4 m-col-start-1 m-col-end-4" id="main-logo">Logo</div>
-        <div class="box col-start-1 col-end-2 m-col-start-1 m-col-end-3" id="burger-con">BM</div>
-        <nav class="box col-start-2 col-end-4 m-col-start-5 m-col-end-12" id="main-nav">
+        <a class="hidden" href="#content">Skip to content</a>
+        <div class="col-start-2 col-end-4 m-col-start-1 m-col-end-3" id="main-logo">
+            <img src="images/QuatroLogo.svg" alt="Quatro Logo" height="50">
+        </div>
+
+        <nav class="col-start-1 col-end-2 m-col-start-1 m-col-end-3" id="main-nav-mobile">
+            <h2 class="hidden">Main Navigation Mobile</h2>
+            <input type="checkbox" id="hamburger">
+                    <label for="hamburger">
+                        <img src="images/burger.svg" alt="hamburger menu icon">
+                    </label>
+                <div id="burger-con">
+
+                        <ul>
+                            <li><a href="mobile-home.html">HOME</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">PRODUCTS</a></li>
+                            <li><a href="#">WHY QUATRO</a></li>
+                            <li><a href="#">PARTNERS</a></li>
+                            <li><a href="mobile-contact.html">CONTACT</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+        </nav>
+
+        <nav class="col-start-2 col-end-4 m-col-start-3 m-col-end-9" id="main-nav">
             <h2 class="hidden">Main Navigation</h2>
-            Nav</nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">ABOUT US</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">WHY QUATRO</a></li>
+                    <li><a href="#">PARTNERS</a></li>
+                </ul>
+                <a class="contact-now" id="contact-now-top" href="contact.html">CONTACT</a>
+        </nav>
+
         <div class="box col-start-4 col-end-5 m-col-start-12 m-col-end-13" id="cart">Cart</div>
     </header>
     <main>
