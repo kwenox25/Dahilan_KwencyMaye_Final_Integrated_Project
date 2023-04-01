@@ -6,80 +6,92 @@
     margin-left: 30px;
 }
 
-#main-nav-mobile {
-    
-    grid-column: 1/-1;
+#QuatroLogo {
+    width: 65%;
+    margin-left: 50px;
 }
 
+/* 2. ---Main Nav--- */
 
-#main-nav-mobile label img {
-	background: url(../images/burger.svg) center no-repeat;
-	border: 0px;
-	width: 50px;
-	height: 50px;
-	transition: all .5s ease;
+#main-nav button {
+    width: 20px;
+    height: 20px;
+    background: url(../images/burger.svg) no-repeat center;
     margin-top: 15px;
     margin-bottom: 20px;
-    cursor: pointer;
-}
-
-#main-nav-mobile ul {
+    transition: all .5s ease;
+    border: 0;
+ }
+ 
+ #main-nav button.expanded {
+    transform: rotate(90deg);
+ }
+ 
+ #burger-con {
+    margin-top: 36px;
+    margin-bottom: 20px;
+    display: none;
+ }
+ 
+ #burger-con.slide-toggle {
+    display: block;
+ }
+ 
+ #main-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
  }
  
- #main-nav-mobile li a {
-     display: block;
-     padding: 10px 0 10px 0;
-     text-align: center;
-     color: #626262;
- }
- 
- #main-nav-mobile li {
-     border-bottom: 1px solid #efefef;
- }
- 
- #main-nav-mobile li:first-child {
-     border-top: 1px solid #efefef;
- }
- 
- #main-nav-mobile li:last-child {
-     margin-bottom: 10px;
- }
-
-#burger-con, #main-nav-mobile input {
-    display: none;
-}
-
- #main-nav-mobile input:checked ~ #burger-con {
+ #main-nav ul li a {
+    text-decoration: none;
     display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #626262;
+ }
+ 
+ #main-nav ul li a:hover {
+    color: #9a2018;
+ }
+ 
+ #main-nav ul li {
+    border-bottom: 1px solid #efefef;
+ }
+ 
+ #main-nav ul li:first-child {
+    border-top: 1px solid #efefef;
+ }
+ 
+ #main-nav ul li:last-child {
+    margin-bottom: 10px;
  }
 
- #main-nav-mobile input:checked ~ label img{
-    transform: rotate(90deg);
+ /* #contact-now-top {
+    color: #fff;
+    font-size: 16px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+ } */
+
+ #contact-now-top {
+    display: none;
  }
 
-
-#cart {
-    margin-top: 20px;
-    margin-bottom: 20px;
+ 
+ #logo {
     height: 60px;
-}
+    max-width: 288px;
+    margin-bottom: 20px;
+ }
 
-#main-header {
-    top: 0;
-    height: 90px;
-    /* margin-top: 20px;
-    margin-bottom: 20px; */
-    /* position: sticky; */
-    z-index: 999999 !important;
-    background-color: #F3EBE0;
+ /* Main Nav  */
 
-}
 #hero-con {
-    background-color: #292929;
-    height: 496px;
+      height: 496px;
 }
 
 #getStarted {
@@ -302,51 +314,74 @@
 
 @media screen and (min-width: 768px) {
 
-    #burger-con {
+    #sticky-nav-con {
+        position: sticky;
+        background-color: #F3EBE0;
+        top: 0px;
+        border-bottom: solid 1px #c3c3c3;
+        z-index: 1; 
+        /* had to set z-index as css filters was causing images to overlap, see below */
+     }
+
+     #QuatroLogo {
+        width: 80%;
+        margin-left: 20px;
+    }
+
+     #button {
         display: none;
-    }
-    
-    #main-logo {
+     }
+  
+     #logo {
+        width: 100%;
+        margin-top: 32px;
+        order: -1;
+     }
+  
+     #burger-con {
         display: block;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        height: 60px;
-        top: 0;
-    }
-
-    #main-nav {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        height: 60px;
-        /* display: block; */
-        align-self: center;
-        /* margin-left: 30px; */
-        position: relative;
-    }
-
-    #main-nav ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    #main-nav ul li {
+        font-size: 12px;
+     }
+  
+     #burger-con ul li, #burger-con ul li:first-child {
+        border: none;
         display: inline;
-        padding-left: 25px;
-        
-    }
-    
-    #main-nav ul li a {
-        text-decoration: none;
-        transition: all .5s ease-in-out;
-        color: #435350;
-        font-size: 14px;
-        font-weight: 500;
-    }
-    
-    #main-nav ul li a:hover {
-        color:  #F6871F;
-    }
-    
+     }
+  
+     #main-nav ul li a {
+        font-size: 10px;
+        display: inline;
+     }
+  
+     #burger-con ul li {
+        margin-right: 10px;
+     }
+  
+     #burger-con ul li:last-child {
+        margin-right: 0;
+     }
+  
+     #main-nav {
+        margin-top: 4%;
+        margin-bottom: 4%;
+        padding-left: 30px;
+     }
+  
+     #book-now-header {
+        display: flex;
+        margin-right: -16px;
+     }   
+
+     #contact-now-top {
+        color: #fff;
+        font-size: 16px;
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+     } 
+
     .contact-now {
         text-align: center;
         padding: 10px;
@@ -360,17 +395,13 @@
         color: white;
     }
     
-    #contact-now-top:hover {
+    .contact-now:hover {
         background-color: #F6871F;
         color: #435350;
     }
     
-    #main-nav-mobile {
-        display: none;
-    }
 
     #hero-con {
-        background-color: #292929;
         height: 536px;
     }
 
@@ -496,24 +527,40 @@
 }
 
 @media screen and (min-width: 1200px) {
-    #main-logo {
-        display: block;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        height: 60px;
-        top: 0;
+
+    #logo {
+        width: 70%;
+        margin-left: 20px;
     }
 
-    #main-nav-mobile {
-        display: none;
-    }
+    #main-header {
+        height: 110px;
+     }
 
-    #burger-con {
-        display: none;
-    }
+     #main-nav {
+        margin-top: 3%;
+        margin-bottom: 2%;
+        margin-left: 25px;
+     }
+
+     #main-nav ul li a {
+        font-size: 16px;
+     }
+  
+     #burger-con ul li {
+        margin-right: 25px;
+        
+     }
+  
+     #burger-con {
+        margin-top: 28px;
+     }
+  
+     .book-now {
+        font-size: 18px;
+     }
     #hero-con {
-        background-color: #292929;
-        height: 621px;
+         height: 621px;
     }
 
     #features-con {
