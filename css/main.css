@@ -1,3 +1,7 @@
+#main-header {
+    background-color: #F3EBE0;
+}
+
 #main-logo {
     height: 60px;
     position: relative;
@@ -67,20 +71,37 @@
     margin-bottom: 10px;
  }
 
- /* #contact-now-top {
-    color: #fff;
-    font-size: 16px;
-    font-style: italic;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
- } */
-
  #contact-now-top {
     display: none;
  }
 
+ #hero-h3 {
+    grid-row: 3/3;
+    height: 218px;
+}
+
+.title-h3 {
+    margin-top: 182px;
+}
+
+.tag-line p {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.buttonOrange {
+       
+    border-radius: 50px;
+    background-color: #F6871F;
+}
+
+.buttonBrown {
+    border-radius: 50px;
+    background-color: #B29961;
+    border: 2px solid  white;
+}
  
  #logo {
     height: 60px;
@@ -91,24 +112,73 @@
  /* Main Nav  */
 
 #hero-con {
-      height: 496px;
+    height: 550px;
+    object-fit: cover;
+    background-color: #F3EBE0;
+}
+
+#hero-con img {
+    grid-column: 1/-1;
+    grid-row: 1/1;
+    justify-self: center;
+}
+
+
+#hero-con .grid-con {
+     grid-column: 2/3;
+    /* tell the overlappig grid to live in row 1 so it overlaps the image */
+    grid-row: 1/1;
+    /* get rid of margin 0 auto from original .grid-con class */
+    margin: 0;
+ }
+
+
+ #getStarted h4 {
+    color: white;
+    font-size: 12px;
+    padding-top: 18px;
+    text-align: center;
+}
+
+#shopOnline h4 {
+    color: white;
+    font-size: 12px;
+    padding-top: 18px;
+    text-align: center;
+}
+
+#getStarted:hover {
+    background-color: white;
+}
+
+#getStarted > h4:hover {
+    color: #F6871F;
+}
+
+.highlight-orange {
+    color: #F6871F;
 }
 
 #getStarted {
-    height: 40px;
+    margin-top: 85px;
+    height: 50px;
     grid-row: 3/4;
     border-radius: 50px;
 }
 
 #shopOnline {
-    height: 40px;
+    height: 50px;
     grid-row: 4/4;
     border-radius: 50px;
 }
+
+
 #hero-h3 {
-    grid-row: 2/3;
+    grid-row: 1/3;
     height: 218px;
 }
+
+
 #features-con {
     background-color: #DBDBDB;
     height: 919px;
@@ -316,11 +386,14 @@
 
     #sticky-nav-con {
         position: sticky;
-        background-color: #F3EBE0;
         top: 0px;
         border-bottom: solid 1px #c3c3c3;
         z-index: 1; 
         /* had to set z-index as css filters was causing images to overlap, see below */
+     }
+
+     #main-header {
+        background-color: #F3EBE0;
      }
 
      #QuatroLogo {
@@ -362,15 +435,13 @@
      }
   
      #main-nav {
+        
         margin-top: 4%;
         margin-bottom: 4%;
         padding-left: 30px;
      }
   
-     #book-now-header {
-        display: flex;
-        margin-right: -16px;
-     }   
+
 
      #contact-now-top {
         color: #fff;
@@ -402,14 +473,79 @@
     
 
     #hero-con {
-        height: 536px;
+        height: 398px;
     }
 
-    #shopOnline, 
-    #getStarted {
-        grid-row: 3/3;
-        height: 71px;
+    #hero-main {
+        height: 398px;
     }
+
+    #tag-line {  
+        grid-row: 1/3;
+    }
+
+    #hero-h3 {
+        grid-row: 1/3;
+        height: 218px;
+    }
+
+
+    .title-h3 {
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-size: 30px;
+        color: #435350;
+        font-weight: 500;
+    }
+    
+    .tag-line p {
+       
+        margin-bottom: 0;
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+
+    #shopOnline, 
+    #getStarted {  
+        margin-top: 0;
+        grid-row: 3/3;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .buttonOrange {
+       
+        border-radius: 50px;
+        background-color: #F6871F;
+    }
+    
+    .buttonBrown {
+        border-radius: 50px;
+        background-color: #B29961;
+        border: 2px solid  white;
+    }
+
+    #getStarted h4 {
+        color: white;
+        padding-top: 25px;
+        text-align: center;
+    }
+
+    #shopOnline h4 {
+        color: white;
+        padding-top: 25px;
+        text-align: center;
+    }
+
+    
+    #getStarted h4,  #shopOnline h4 {
+        color: white;
+        font-size: 11px;
+        padding-top: 16px;
+        text-align: center;
+    }
+
 
     #features-con {
         height: 416px;
@@ -559,9 +695,45 @@
      .book-now {
         font-size: 18px;
      }
-    #hero-con {
+
+     #hero-con {
+        height: 621px;
+   }
+
+    #hero-main {
          height: 621px;
     }
+
+    .title-h3 {
+        margin-top: 50px;
+        margin-bottom: 0;
+        font-size: 50px;
+        color: #435350;
+        font-weight: 500;
+    }
+
+    .tag-line p {
+        margin-top: 25px;
+        margin-bottom: 0;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    #shopOnline, 
+    #getStarted {  
+        margin-top: 0;
+        grid-row: 3/3;
+        height: 65px;
+        cursor: pointer;
+    }
+
+    #getStarted h4,  #shopOnline h4 {
+        color: white;
+        font-size: 16px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
 
     #features-con {
         
