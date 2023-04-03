@@ -52,3 +52,20 @@ const slider = document.querySelector('.items');
     const walk = (x - startX) * 3;
     slider.scrollLeft = scrollLeft - walk;
   });
+
+//   
+
+function myFunction() {
+	var x = document.getElementById("myDIV");
+	x.style.display = (x.style.display === "none") ? "block" : "none";
+  }
+
+function myFunction2() {
+	var x = document.getElementById("myDIV2");
+	x.style.display = (x.style.display === "none") ? "block" : "none";
+  }
+
+  function myFunction3() {
+	var x = document.getElementById("myDIV3");
+	x.style.display = (x.style.display === "none") ? "block" : "none";
+  }
