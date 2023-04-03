@@ -916,11 +916,81 @@
         grid-row: 2/3;
     }
 
+    .questions li {
+        list-style-type: none;
+    }
+
+    .questionCon {
+
+        border-radius: 30px;
+        height: 56px;
+        background-color: #FBFFC4;
+        border: 2px solid #2c2c2c;
+    }
+
+    .questionCon h3 {
+        padding-top: 10px;
+        padding-left: 15px;
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    .questionCon button {
+        cursor: pointer;
+    }
 
     #ourPartners {
         background: rgb(151,215,237);
         background: linear-gradient(114deg, rgba(151,215,237,1) 0%, rgba(193,236,251,1) 48%, rgba(124,201,228,1) 100%);
         height: 620px;
+    }
+
+    #ourPartners ul li {
+        margin-bottom: 20px;
+        list-style: none;
+        
+    }
+
+    #ourPartners ul li button {
+        background-color: #FBFFC4;
+        border: #2c2c2c 2px solid;
+        border-radius: 30px;
+        height: 56px;
+        width: 570px;
+    }
+
+    #ourPartners ul li button:hover {
+        background-color: #f9c9a4;
+        cursor: pointer;
+    }
+
+    #ourPartners ul li button h3 {
+       font-size: 22px;
+       font-weight: 500;
+       padding-top: 0;
+       padding-left: 20px;
+       text-align: left;
+    }
+
+    #myDIV, #myDIV2, #myDIV3 {
+        padding: 20px 0 20px 0;
+        width: 570px;
+        text-align: center;
+        border-radius: 30px;
+        background-color: #e3f6ff;
+        margin-top: 20px;
+    }
+
+    #myDIV p, #myDIV2 p, #myDIV3 p {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 10px 10px 0 0;
+        text-align: left;
+        border-bottom: #435350 1px solid;
+    }
+
+    #myDIV, #myDIV2, #myDIV3 {
+        display: none;
     }
 
     .ourPartners-logo {
