@@ -75,10 +75,6 @@
     display: none;
  }
 
- #hero-h3 {
-    grid-row: 3/3;
-    height: 218px;
-}
 
 .title-h3 {
     margin-top: 182px;
@@ -121,6 +117,36 @@
     grid-column: 1/-1;
     grid-row: 1/1;
     justify-self: center;
+}
+
+.hero div {
+    margin-top: 40px;
+    grid-row: 1/1;
+}
+
+.hero div h3 {
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.hero div h3 span {
+    font-size: 40px;
+    text-align: center;
+    color: #F6871F;
+}
+
+.hero div p {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+.hero div p span {
+    font-size: 50px;
+    text-align: center;
+    color: #F6871F;
 }
 
 #hero-can {
@@ -184,12 +210,6 @@
 
 #shopOnline > h4:hover {
     color: #B29961;
-}
-
-
-#hero-h3 {
-    grid-row: 1/3;
-    height: 218px;
 }
 
 
@@ -427,8 +447,11 @@
 }
 
 #ourPartners {
-    height: 593px;
+    background: rgb(151,215,237);
+    background: linear-gradient(114deg, rgba(151,215,237,1) 0%, rgba(193,236,251,1) 48%, rgba(124,201,228,1) 100%);
+    height: 1105px;
 }
+
 
 .ourPartners-logo {
     margin-top: 50px;
@@ -436,11 +459,71 @@
 }
 
 
-#testimonialsCon {
-    grid-row: 2/3;
-    grid-column: 2/11;
-
+.questionCon button {
+    cursor: pointer;
 }
+
+
+#ourPartners h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#ourPartners ul {
+    padding-left: 0;
+}
+
+#ourPartners ul li {
+    margin-bottom: 20px;
+    list-style: none;
+    
+}
+
+#ourPartners ul li button {
+    background-color: #FBFFC4;
+    border: #2c2c2c 2px solid;
+    border-radius: 30px;
+    height: 56px;
+    width: 290px;
+   
+}
+
+#ourPartners ul li button:hover {
+    background-color: #f9c9a4;
+    cursor: pointer;
+}
+
+
+#nutritionalFacts, #drinkDaily, #quatroStandard {
+    width:  290px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #e3f6ff;
+}
+
+#nutritionalFacts p {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    text-align: left;
+    border-bottom: #435350 1px solid;
+    margin-bottom: 10px;
+}
+
+#drinkDaily p, #quatroStandard p {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    text-align: left;
+}
+
+#nutritionalFacts, #drinkDaily {
+    display: none;
+}
+
 .content {
     /* display: grid; */
     display: flex;
@@ -456,14 +539,6 @@
     grid-row: 1/3;
 }
 
-#testimonial-con {
-    margin-top: 50px;
-    height: 561px;
-    border-radius:  0  0 50px 50px;
-    z-index: 3;
-    position: absolute;
-}
-
 #productAd {
     grid-row: 1/3;
     height: 200px;
@@ -475,27 +550,6 @@
     margin-top: 100px;
 }
 
-#testimonialContent {
-    margin-top: 200px;
-    grid-row: 2/3;
-    height: 168px;
-    
-}
-
-#testimonialPic {
-    height: 50px;
-    grid-row: 3/3;
-    border-radius: 50%;
-    color: black;
-    background-color: white;
-}
-
-#testimonialUser {
-    color: black;
-    height: 50px;
-    grid-row: 3/3;
-    background-color: white;
-}
 
 #footer-con {
    margin-top: 563px;
@@ -639,30 +693,6 @@
         height: 398px;
     }
 
-    #tag-line {  
-        grid-row: 1/3;
-    }
-
-    #hero-h3 {
-        grid-row: 1/3;
-        height: 218px;
-    }
-
-
-    .title-h3 {
-        margin-top: 20px;
-        margin-bottom: 0;
-        font-size: 30px;
-        color: #435350;
-        font-weight: 500;
-    }
-    
-    .tag-line p {
-       
-        margin-bottom: 0;
-        font-size: 12px;
-        line-height: 25px;
-    }
 
     #hero-can {
         margin-top: 85px;
@@ -672,7 +702,7 @@
 
     #shopOnline, 
     #getStarted { 
-        margin-top: 300px; 
+        margin-top: 270px; 
         grid-row: 1/1;
         height: 45px;
         cursor: pointer;
@@ -916,89 +946,28 @@
         grid-row: 2/3;
     }
 
-    .questions li {
-        list-style-type: none;
-    }
 
-    .questionCon {
-
-        border-radius: 30px;
-        height: 56px;
-        background-color: #FBFFC4;
-        border: 2px solid #2c2c2c;
-    }
-
-    .questionCon h3 {
-        padding-top: 10px;
-        padding-left: 15px;
-        font-weight: 500;
-        font-size: 22px;
-    }
-
-    .questionCon button {
-        cursor: pointer;
-    }
-
+    
     #ourPartners {
-        background: rgb(151,215,237);
-        background: linear-gradient(114deg, rgba(151,215,237,1) 0%, rgba(193,236,251,1) 48%, rgba(124,201,228,1) 100%);
-        height: 620px;
-    }
-
-    #ourPartners ul li {
-        margin-bottom: 20px;
-        list-style: none;
-        
+    height: 520px;
     }
 
     #ourPartners ul li button {
-        background-color: #FBFFC4;
-        border: #2c2c2c 2px solid;
-        border-radius: 30px;
-        height: 56px;
-        width: 570px;
+        height: 34px;
+        width: 363px;
+       
     }
 
-    #ourPartners ul li button:hover {
-        background-color: #f9c9a4;
-        cursor: pointer;
+    #drinkDaily p, #quatroStandard p, #nutritionalFacts p {
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
-    #ourPartners ul li button h3 {
-       font-size: 22px;
-       font-weight: 500;
-       padding-top: 0;
-       padding-left: 20px;
-       text-align: left;
+    #nutritionalFacts, #drinkDaily, #quatroStandard {
+        width:  363px;
     }
+    
 
-    #myDIV, #myDIV2, #myDIV3 {
-        padding: 20px 0 20px 0;
-        width: 570px;
-        text-align: center;
-        border-radius: 30px;
-        background-color: #e3f6ff;
-        margin-top: 20px;
-    }
-
-    #myDIV p, #myDIV2 p, #myDIV3 p {
-        margin-left: 50px;
-        margin-right: 50px;
-        padding: 10px 10px 0 0;
-        text-align: left;
-        border-bottom: #435350 1px solid;
-    }
-
-    #myDIV, #myDIV2, #myDIV3 {
-        display: none;
-    }
-
-    .ourPartners-logo {
-        height: 106px;
-    }
-    #productAd {
-        height: 224px;
-    }
     
     #ourPartners h2 {
         margin-top: 30px;
@@ -1009,29 +978,7 @@
        
     }
 
-    #testimonial-con {
-    margin-top: 50px;
-    height: 443px;
-    border-radius:  0  0 50px 50px;
-    z-index: 3;
-    position: absolute;
-    }
-
-
-    #testimonialPic {
-        height: 43px;
-        color: black;
-    }
-
-    #testimonialUser {
-        height: 43px;
-        color: black;
-    }
-
-    #testimonialContent {
-        margin-top: 145px;
-    }
-
+    
     #footer-con {
         margin-top: 386px;
         padding-top: 116px;
@@ -1116,26 +1063,36 @@
    #hero-can {
     margin-top: 120px;
     position: relative;
-}
+    }
 
+    
+    .hero div h3 {
+        font-size: 70px;
+        text-align: center;
+        
+    }
+
+    .hero div h3 span {
+        font-size: 70px;
+        text-align: center;
+        color: #F6871F;
+    }
+
+    .hero div p {
+        font-size: 70px;
+        font-weight: 700;
+        text-align: center;
+        
+    }
+
+    .hero div p span {
+        font-size: 80px;
+        text-align: center;
+        color: #F6871F;
+    }
 
     #hero-main {
          height: 621px;
-    }
-
-    .title-h3 {
-        margin-top: 50px;
-        margin-bottom: 0;
-        font-size: 50px;
-        color: #435350;
-        font-weight: 500;
-    }
-
-    .tag-line p {
-        margin-top: 25px;
-        margin-bottom: 0;
-        font-size: 16px;
-        line-height: 30px;
     }
 
     #shopOnline, 
@@ -1278,19 +1235,20 @@
         grid-row: 2/3;
     }
 
-
-    #testimonialContent {
-        margin-top: 247px;
-        height: 252px;
+    #ourPartners {
+        height: 797px;
     }
 
-    #testimonial-con {
-        margin-top: 50px;
-        height: 647px;
-        border-radius:  0  0 50px 50px;
-        z-index: 3;
-        position: relative;
+    #ourPartners ul li button {
+        height: 56px;
+        width: 570px;
+       
     }
+
+    #nutritionalFacts, #drinkDaily, #quatroStandard {
+        width:  570px;
+    }
+
 
     #productAd {
         margin-top: 50px;
@@ -1301,13 +1259,6 @@
         margin-top: 200px;
     }
 
-    #testimonialPic {
-        height: 70px;
-    }
-
-    #testimonialUser {
-        height: 70px;
-    }
 
     #footer-con {
         margin-top: -50px;
@@ -1334,29 +1285,6 @@
         background-color: #0088CA;
     }
 
-    .no {
-        text-align: center;
-        
-    }
-    .no-box {
-        
-        font-size: 60px;
-        grid-column: 6/7;
-    }
     
-    .btn {
-        background-color: rgb(179, 179, 179);
-    }
-    
-    .btn:hover {
-        color: white;
-        background-color: green;
-    }
-    button {
-        margin-right: 50px;
-    }
-    .buttons {
-        grid-column: 5/9;
-    }
 }
 
