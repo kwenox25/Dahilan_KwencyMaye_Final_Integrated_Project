@@ -55,17 +55,17 @@ const slider = document.querySelector('.items');
 
 //   
 
-function myFunction() {
-	var x = document.getElementById("myDIV");
+function nutritionalFacts() {
+	var x = document.getElementById("nutritionalFacts");
 	x.style.display = (x.style.display === "none") ? "block" : "none";
   }
 
-function myFunction2() {
-	var x = document.getElementById("myDIV2");
+function drinkDaily() {
+	var x = document.getElementById("drinkDaily");
 	x.style.display = (x.style.display === "none") ? "block" : "none";
   }
 
-  function myFunction3() {
-	var x = document.getElementById("myDIV3");
+  function quatroStandard() {
+	var x = document.getElementById("quatroStandard");
 	x.style.display = (x.style.display === "none") ? "block" : "none";
   }
