@@ -803,6 +803,110 @@
     background-color: #356038;
 }
 
+/* Contact Page */
+
+#contactSec {
+    height: 1381px;
+    background-color: #FFF5F4;
+
+
+}
+
+#helpSection-left {
+    margin-top: 50px;
+}
+
+.needOrder h3, .press h3, .careers h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+.needOrder ul li a, .press ul li a, .careers ul li a {
+    color: #2c2c2c;
+}
+
+.needOrder ul li {
+    margin-bottom: 22px;
+}
+
+#contacts-icons ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#contacts-icons ul li {
+    display: inline-block;
+    font-size: 50px;
+    color: #F6871F;
+    margin-right: 20px;
+}
+
+#contacts-icons ul li i:hover {
+    color: #2c2c2c;
+}
+
+#contact-form-fields-right {
+    margin-top: 30px;
+}
+
+#contact-form-fields-right h3 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#contact-form-fields-right form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form-fields-right input, textarea {
+    padding: 6px;
+    margin-bottom: 10px;
+    border-style: none;
+    height: 46px;
+}
+
+#contact-form-fields-right form label span {
+   color: red;
+}
+
+#contact-form-fields-right select {
+    height: 46px;
+    background-color: white;
+    border-style: none;
+    color: #626262;
+    margin-bottom: 10px;
+}
+
+#contact-form-fields-right label {
+   margin-bottom: 10px;
+
+}
+
+#contact-form-fields-right input[type="submit"] {
+    margin-top: 10px;
+    border: none;
+    background-color: #F6871F;
+    transition: all 200ms ease-in;
+}
+
+#contact-form-fields-right input[type="submit"]:hover {
+    background-color: white;
+    color: #F6871F;
+    border: 2px solid #F6871F;
+    
+}
+#lineSeparator {
+    height: 5px;
+    border-bottom: 3px solid #2c2c2c;
+    padding-top: 20px;
+}
+
 @media screen and (min-width: 768px) {
 
     #sticky-nav-con {
@@ -1283,6 +1387,12 @@
         font-size: 25px;
     }
 
+    /* Contact Page */
+
+    #contactSec {
+        height: 680px;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -1317,7 +1427,7 @@
   
 
      #hero-con {
-        height: 621px;
+        height: 500px;
    }
 
    #hero-can {
@@ -1347,7 +1457,7 @@
     }
 
     #hero-main {
-         height: 621px;
+         height: 500px;
     }
 
     
@@ -1587,6 +1697,11 @@
         font-size: 25px;
     }
    
+    /* Contact Page */
+
+    #contactSec {
+        height: 731px;
+    }
     
 }
 
