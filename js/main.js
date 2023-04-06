@@ -69,3 +69,8 @@ function drinkDaily() {
 	var x = document.getElementById("quatroStandard");
 	x.style.display = (x.style.display === "none") ? "block" : "none";
   }
+
+  function hover(img)
+  {
+   img.src = "images/orange-can-back.png";
+  }
