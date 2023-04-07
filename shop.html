@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Welcome to QUATRO</title>
+    <!-- Link to reset or normalize before main.css
+    only choose one -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="hidden">Welcome to QUATRO</h1>
+    <div id="sticky-nav-con">
+        <header class="grid-con" id="main-header">
+            <nav id="main-nav" class="col-span-full m-col-start-4 m-col-end-11">
+                <h2 class="hidden">Main Navigation</h2>
+                <button id="button"></button>
+                <div id="burger-con">
+                    <ul id="burger-menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">THE TEAM</a></li>
+                        <li><a href="#">WHY QUATRO</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="logo" class="col-span-full m-col-start-1 m-col-end-4">
+                <img src="images/QuatroLogo.svg" id="QuatroLogo" alt="Couples Resort Logo">
+            </div>
+
+            <div id="contact-now-top" class="m-col-span-2 book-now">
+                <a class="contact-now" href="contact.html">CONTACT</a>
+            </div>
+
+        </header>
+   </div>
+
+
+    <main>
+
+        <section class="grid-con" id="promo-con">
+            <!-- <h2 class="col-span-full m-col-start-2 m-col-end-6">Skip the line & get<br>rewarded for it.</h2>
+            <img class="col-span-full m-col-start-7 m-col-end-12"
+            sizes="100vw"
+            srcset="
+            images/quatro-app2_zy52ut_c_scale,w_320.png 320w,
+            images/quatro-app2_zy52ut_c_scale,w_502.png 502w,
+            images/quatro-app2_zy52ut_c_scale,w_636.png 636w,
+            images/quatro-app2_zy52ut_c_scale,w_738.png 738w,
+            images/quatro-app2_zy52ut_c_scale,w_848.png 848w,
+            images/quatro-app2_zy52ut_c_scale,w_931.png 931w,
+            images/quatro-app2_zy52ut_c_scale,w_1019.png 1019w,
+            images/quatro-app2_zy52ut_c_scale,w_1124.png 1124w,
+            images/quatro-app2_zy52ut_c_scale,w_1200.png 1200w"
+            src="images/quatro-app2_zy52ut_c_scale,w_1200.png"
+            alt="quatro app" id="promo-main"> -->
+
+            <img class="col-span-full"
+            sizes="100vw"
+            srcset="images/promo-can_tee8qg_c_scale,w_320.jpg 320w,
+            images/promo-can_tee8qg_c_scale,w_503.jpg 503w,
+            images/promo-can_tee8qg_c_scale,w_650.jpg 650w,
+            images/promo-can_tee8qg_c_scale,w_794.jpg 794w,
+            images/promo-can_tee8qg_c_scale,w_927.jpg 927w,
+            images/promo-can_tee8qg_c_scale,w_1125.jpg 1125w,
+            images/promo-can_tee8qg_c_scale,w_1176.jpg 1176w,
+            images/promo-can_tee8qg_c_scale,w_1200.jpg 1200w"
+            src="images/promo-can_tee8qg_c_scale,w_1200.jpg">
+        </section>
+
+        <section class="grid-con" id="product-section">
+            <h2 class="hidden">Product heading</h2>
+            <h3 class="product-heading col-span-full m-col-start-2 m-col-end-5">
+                Showing 1–4 of 23 results
+            </h3>
+
+            <form class="product-heading col-span-full m-col-start-7 m-col-end-9" action="email.php" method="POST" enctype="text/plain">
+                <select id="order" name="orders">
+                        <option value="null">Default Sorting</option>
+                        <option value="yes">Featured</option>
+                        <option value="no">Bestsellers</option>
+                </select>
+            </form>
+        </section>
+
+        <section class="grid-con" id="product-photos">
+            <ul class="col-span-full m-col-start-2 m-col-end-9 product-items" >
+                <li>
+                    <div class="imageContainer box2">
+                        <a href="#lightbox" data-drink="orange">
+                        </a>
+                    </div>
+
+                    <div class="productInfo">
+                        <h5 hidden="class">Orange Blood Fizzy Drink</h5>
+                    </div> 
+
+                </li>
+
+                <li>
+                    <div class="imageContainer box2">
+                        <a href="#lightbox" data-drink="orange">
+                        </a>
+                    </div>
+
+                    <div class="productInfo">
+                        <h5 hidden="class">Orange Blood Fizzy Drink</h5>
+                    </div> 
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+            
+        </section>
+   
+    </main>
+    <footer id="footer-con">
+        <div class="grid-con">
+            <h2 class="hidden">Footer Info</h2>
+
+            <div id="footer-newsletter" class="col-span-full m-col-start-2 m-col-end-5">
+                <img src="images/QuatroWhiteFontOnly.svg" alt="white quatro logo">
+                <h3>STAY IN THE KNOW</h3>
+                <p>Email Address*</p>
+                <form action="email.php" method="POST" enctype="text/plain">
+                    <input name="emailAddress" type="text" required placeholder="email@email.com">
+                    <input name="submit" type="submit" value="SUBMIT">
+                </form>
+            </div>
+
+            <nav id="footer-nav" class="col-start-1 col-end-3 m-col-start-5 m-col-end-7">
+                <h2 id="quick">QUICKLINKS</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">About Us</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">The Team</a></li>
+                    <li><a href="#">Why Quatro</a></li>
+                    
+                </ul>
+            </nav>
+
+            <nav id="footer-nav-quicklinks" class="col-start-3 col-end-5 m-col-start-7 m-col-end-9">
+                <h2>SUPPORT</h2>
+                <ul>
+                    <li><a href="index.html">Search Terms</a></li>
+                    <li><a href="menu.html">Help & FAQs</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Order and Returns</a></li>
+                    <li><a href="#">Careers</a></li>
+                    
+                </ul>
+            </nav>
+
+            <div id="footer-right" class="col-span-full m-col-start-9 m-col-end-13">
+                <h2 class="hidden">Company Info</h2>
+                    <p><i class="fa fa-map-pin"></i>&nbsp;&nbsp;&nbsp;137 Dundas Street,<br>
+                    London, Ontario, Canada, N6A 1E9</p>
+                    
+                    <p class="emailReservations"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;inquiry@quatro.com</p>
+                   
+                    <p><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;(1) 519 701 5406</p>
+
+                <div id="footer-icons">
+                    <ul>
+                       
+                        <li><i class="fa fa-instagram"></i> </li>
+                        <li><i class="fa fa-twitter"></i> </li>
+                        <li><i class="fa fa-facebook"></i> </li>
+                        <li><i class="fa fa-youtube-play"></i> </li>
+                    </ul>  
+                </div>
+
+            </div>
+
+         </div>
+    </footer>  
+    <script src="js/main.js"></script>
+</body>
+</html>
