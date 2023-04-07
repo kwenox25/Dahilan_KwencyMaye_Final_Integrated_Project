@@ -37,7 +37,19 @@ function drinkDaily() {
 	x.style.display = (x.style.display === "none") ? "block" : "none";
   }
 
-  function hover(img)
+
+  let fruit = document.querySelector('#grapefruit');
+
+  function changeBGImage() 
   {
-   img.src = "images/orange-can-back.png";
+	// debugger;
+	this.src = "images/pineapple.png";
+	console.log('hovering', this);
   }
+
+  fruit.addEventListener("mouseover", changeBGImage);
+
+  function offHover()
+{
+    this.src = "images/grapefruit.png";
+}
