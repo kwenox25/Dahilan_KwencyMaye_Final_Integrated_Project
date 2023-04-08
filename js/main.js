@@ -38,18 +38,50 @@ function drinkDaily() {
   }
 
 
-  let fruit = document.querySelector('#grapefruit');
+let fruits = document.querySelectorAll('.items img');
 
-  function changeBGImage() 
-  {
-	// debugger;
-	this.src = "images/pineapple.png";
-	console.log('hovering', this);
+  function changeBGImage() {
+    let originalSrc = this.getAttribute('src');
+    this.src = originalSrc.replace('.png', '-back.png');
+    console.log('hovering', this);
   }
 
-  fruit.addEventListener("mouseover", changeBGImage);
+  function resetBGImage() {
+    let originalSrc = this.getAttribute('src');
+    this.src = originalSrc.replace('-back.png', '.png');
+    console.log('mouseout', this);
+  }
 
-  function offHover()
-{
-    this.src = "images/grapefruit.png";
+  fruits.forEach(fruit => {
+    fruit.addEventListener("mouseover", changeBGImage);
+    fruit.addEventListener("mouseout", resetBGImage);
+  });
+
+  let minValue = document.getElementById("min-value");
+let maxValue = document.getElementById("max-value");
+
+function validateRange(minPrice, maxPrice) {
+  if (minPrice > maxPrice) {
+
+    // Swap to Values
+    let tempValue = maxPrice;
+    maxPrice = minPrice;
+    minPrice = tempValue;
+  }
+
+  minValue.innerHTML = "$" + minPrice;
+  maxValue.innerHTML = "$" + maxPrice;
 }
+
+const inputElements = document.querySelectorAll("input");
+
+inputElements.forEach((element) => {
+  element.addEventListener("change", (e) => {
+    let minPrice = parseInt(inputElements[0].value);
+    let maxPrice = parseInt(inputElements[1].value);
+
+    validateRange(minPrice, maxPrice);
+  });
+});
+
+validateRange(inputElements[0].value, inputElements[1].value);

@@ -896,7 +896,7 @@
 }
 
 #product-photos {
-    padding-top: 30px;
+    padding-top: 10px;
     background-color: #FFF5F4;
 }
 
@@ -906,6 +906,92 @@
     height: 393px;
     margin-bottom: 20px;
     margin-bottom: 20px;
+}
+
+
+.items:hover .product-details {
+	opacity: 1;
+}
+
+.product-details {
+    height: 30px; 
+	transition: .7s ease;
+	opacity: 0;
+	text-align: center;
+    position: relative;
+} 
+.product-details h3 {
+    color: white;
+    margin-top: -150px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.product-heading select {
+    height: 45px;
+   border-style: none;
+   width: 270px;
+   background-color: white;
+}
+.filter h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#product-section p {
+    text-align: right;
+}
+
+.categories ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.categories ul li {
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+.categories ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #2c2c2c;
+}
+
+.categories ul li a:hover {
+    border-bottom: 3px solid #F6871F;
+}
+
+.categories h3 {
+    font-size: 30px;
+}
+
+.tags h3 {
+    font-size: 30px;
+}
+
+.categories {
+    order: 5;
+}
+  .tags {
+    order: 6;
+  }
+
+#product-photos {
+    margin-top: 0;
+}
+
+.addtoCart {
+    border-radius: 30px;
+    background-color: #F6871F;
+    height: 50px;
+    width: 204px;
+}
+
+.addtoCart h4 {
+    color: white;
+    font-weight: 500;
+    padding-top: 10px;
+    font-size: 18px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1325,6 +1411,12 @@
     #contactSec {
         height: 680px;
     }
+    .categories {
+        order: 5;
+      }
+      .tags {
+        order: 6;
+      }
 
 }
 
@@ -1640,6 +1732,34 @@
     #contactSec {
         height: 731px;
     }
+
+    #product-grapefruit {
+        order: 1;
+    }
+
+    #product-pineapple {
+        order: 1;
+    }
+
+    #product-photos {
+        margin-top: -30px;
+    }
+    .categories {
+        margin-top: 40px;
+        order: 1;
+      }
+
+    #product-orange {
+        order: 1;
+    }
+
+    #product-passionfruit {
+        order: 2;
+    }
+
+    .tags {
+        order: 6;
+      }
     
 }
 
