@@ -1117,6 +1117,11 @@
    
 }
 
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
 .payment {
     background-color: #F6871F;
     height: 50px;
