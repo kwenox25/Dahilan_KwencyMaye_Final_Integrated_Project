@@ -110,7 +110,7 @@ let fruitName = {
   },
   passionfruit : {
     picture: "images/passionfruit.png",
-    name: "Blood Orange Fizzy Drink",
+    name: "Passion Fruit Fizzy Drink",
     benefit: "Passionfruit contains antioxidants such as vitamin C, carotenoids, and polyphenols, which can help protect the body against damage from harmful free radicals. Passionfruit is a good source of vitamin C, which can help support the immune system and reduce the risk of infections.",
     inside: " We’re extremely selective and attentive with what goes in every Quatro product. If it isn’t good for you or doesn’t work wonders, we’re leaving it out. PASSIONFRUIT, NATURAL FRUIT FLAVORINGS, NO SUGAR ADDED.",
     usage: "Drink and enjoy. Keep refrigerated. Consume within 3 days of opening.",
@@ -120,4 +120,23 @@ let fruitName = {
 
 }
 
+
+// video / play
+let vid = document.getElementById("myVideo"),
+    icon = document.querySelector(".fa.fa-play");
+
+function playVid() { 
+ 
+  if (vid.style.display == 'none') {
+    vid.style.display = 'block';
+    vid.play();
+    icon.className = "fa fa-close";
+  } else {
+  
+    vid.style.display = 'none';
+    vid.pause();
+    icon.className = "fa fa-play";
+  }
+
+} 
 

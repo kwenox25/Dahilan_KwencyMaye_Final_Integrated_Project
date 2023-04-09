@@ -117,7 +117,7 @@
 
 #hero-con {
     background-color: #FCE7B2;
-    height: 1075px;
+    height: 600px;
     object-fit: cover;
    
 }
@@ -130,12 +130,12 @@
 }
 
 #tagline {
-    margin-top: 40px;
+    margin-top: 230px;
     grid-row: 1/1;
 }
 
 #tagline h3 {
-    margin-top: 300px;
+    margin-top: 190x;
     font-size: 35px;
     text-align: center;
     
@@ -189,6 +189,10 @@
 }
 
 
+.hero h4 {
+
+}
+
 .highlight-orange {
     color: #F6871F;
 }
@@ -197,19 +201,28 @@
     background-color: #EE6161;
     border-radius: 50%;
     outline: none;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     cursor: pointer;
+    margin-left: 30px;
 }
-
+/* 
 .playButton {
     grid-row: 2/3;
+} */
+
+#myVideo {
+    width: 100% !important;
+    height: auto;
+    max-width: 1920px !important;
+    max-height: 1080px !important;
+    position: relative;
 }
 
 .playButton i {
     color: white;
-    font-size: 29px;
-    padding: 19px;
+    font-size: 25px;
+    padding: 15px;
 
 }
 
@@ -217,11 +230,6 @@
     box-shadow: #F69797 0 0 0 10px, transparent 0 0 0 0;
   }
 
-
-/* #playButton img:hover {
-    box-shadow: 0 0 10px 10px #F69797;
-    border-radius: 50%;
-} */
 
 #hero-con h5 {
     font-weight: 500;
@@ -1108,12 +1116,14 @@
     font-size: 18px;
     color: #2c2c2c;
     line-height: 1.5em;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .tags ul li a:hover {
-    color: #F6871F;
-    background-color: white;
+    color: white;
+    background-color: #F6871F;
     padding: 5px;
+    box-shadow: inset 200px 0 0 0 #F6871F;;
    
 }
 
@@ -1146,13 +1156,16 @@
     padding-top: 13px;
 }
 
+#myVideo { display: none; }
+
 @media screen and (min-width: 768px) {
 
     #sticky-nav-con {
         position: sticky;
         top: 0px;
-        border-bottom: solid 1px #FCE7B2;
+        /* border-bottom: solid 1px #FCE7B2; */
         z-index: 1; 
+       
         /* had to set z-index as css filters was causing images to overlap, see below */
      }
 
@@ -1172,22 +1185,36 @@
         width: 80%;
         margin-left: 20px;
     }
-
+    #tagline {
+        margin-top: 67px;
+    }
     #tagline h3 {
-        font-size: 45px;
+        margin-left: 0;
+        text-align: left;
+        font-size: 40px;
         margin-top: 0; 
     }
 
     #tagline h3 span {
-        font-size: 45px;
+        margin-left: 0;
+        text-align: left;
+        font-size: 40px;
     }
 
     #tagline p {
-        font-size: 45px;  
+        margin-left: 0;
+        text-align: left;
+        font-size: 40px;  
     }
 
     #tagline p span {
+        text-align: left;
         font-size: 60px;
+        
+    }
+
+    #hero h4 {
+        margin-top: 30px;
     }
 
      #button {
@@ -1286,6 +1313,10 @@
         
     }
 
+    .hero h4 {
+        text-align: center;
+        margin-top: 25px;
+    }
     
 
     #features-con {
@@ -1611,7 +1642,7 @@
   
 
      #hero-con {
-        height: 500px;
+        height: 455px;
    }
 
  .promo {
@@ -1626,9 +1657,16 @@
     }
 
     
-    
+    #tagline {
+        margin-top: 21px;
+     }
+
+     .hero h4 {
+        text-align: left;
+     }
 
     #tagline h3 {
+        margin-left: 50px;
         font-size: 60px;
         margin-top: 10px; 
     }
@@ -1638,6 +1676,7 @@
     }
 
     #tagline p {
+        margin-left: 50px;
         font-size: 60px;  
     }
 
@@ -1646,7 +1685,7 @@
     }
 
     #hero-main {
-         height: 500px;
+         height: 455px;
     }
 
     
