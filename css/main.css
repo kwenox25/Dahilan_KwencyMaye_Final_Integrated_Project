@@ -129,10 +129,30 @@
     justify-self: center;
 }
 
+#notFound {
+    height: 445px;
+    object-fit: cover;
+   
+}
+
+#notFound img {
+    max-width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/1;
+    justify-self: center;   
+}
+
+#error {
+    grid-row: 1/1;
+    height: 445px;
+     object-fit: cover;
+}
+
 #tagline {
     margin-top: 230px;
     grid-row: 1/1;
 }
+
 
 #tagline h3 {
     margin-top: 190x;
@@ -188,10 +208,6 @@
     text-align: center;
 }
 
-
-.hero h4 {
-
-}
 
 .highlight-orange {
     color: #F6871F;
@@ -1608,6 +1624,15 @@
         order: 6;
       }
 
+      #notFound {
+        height: 800px;
+    }
+    
+    #error {
+        height: 800px;
+       
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -1976,5 +2001,13 @@
         margin-left: 80px;
     }
     
+    #notFound {
+        height: 826px;
+    }
+    
+    #error {
+        height: 826px;
+       
+    }
 }
 

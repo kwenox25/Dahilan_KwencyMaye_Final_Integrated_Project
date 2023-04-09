@@ -42,94 +42,25 @@
 
 
     <main>
-    <section id="contactSec" class="grid-con">
-            <section id="contact-form-fields-right" class="col-span-full m-col-start-2 m-col-end-8">
-                <h3>Contact Customer Support</h3>
-                <p>If you have questions or feedback about an order or Quatro, here’s how to get in touch.</p>
-                <form action="email.php" method="POST" enctype="text/plain">
-                    <label>First Name<span>*</span></label>
-                    <input name="firstName" type="text" placeholder="First Name">
-                    <label>Last Name<span>*</span></label>
-                    <input name="lastName" type="text" placeholder="Last Name">
-                    <label>Email address<span>*</span></label>
-                    <input name="emailAddress" type="text" required placeholder="Email address here">
-
-                    <label>Is your question about an existing order?<span>*</span></label>
-                        <select id="order" name="orders">
-                            <option value="null">Please select an option</option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                        </select>
-
-                    <label>What is your order number?
-                    </label>
-                    <textarea name="msg" placeholder="Put the order number, if none, write 'N/A'"></textarea>
-                    <input name="submit" type="submit" value="SUBMIT">
-                </form>
-            </section>
-
-            <div id="helpSection-left" class="col-span-full m-col-start-9 m-col-end-12">
-                <div class="needOrder">
-                    <h3>Need Order Help?</h3>
-                    <ul>
-                        <li><a href="#">Track your order</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Returns</a></li>
-                        <li><a href="#">Product FAQs</a></li>
-                        <li>And more in our <a href="#">online support center</a></li>
-                    </ul>
-                </div>
-
-                <div class="press">
-                    <h3>Press</h3>
-                    <p>For press inquiries, please <a href="#">click here.</a></p>
-                </div>
-
-                <div class="careers">
-                    <h3>Careers</h3>
-                    <p>If you’re interested in pursuing a career
-                        at Quatro, please <a href="#">click here.</a></p>
-                </div>
-
-                <div id="contacts-icons">
-                    <ul>
-                       
-                        <li><i class="fa fa-instagram"></i> </li>
-                        <li><i class="fa fa-twitter"></i> </li>
-                        <li><i class="fa fa-facebook"></i> </li>
-                        <li><i class="fa fa-youtube-play"></i> </li>
-                    </ul>  
-                </div>
-
-            </div>
-
-            
-    </section>
-
-
-    <section class="grid-con" id="testimonialCon">
-        <h2 class="hidden">Promotional Product</h2>
-            <div  class="col-span-full m-col-start-4 m-col-end-10 l-col-start-2 l-col-end-6" id="promoProduct">
-                <div class="linktoProducts">
-                    <h3>6-Pack Quatro Drinks</h3>
-                    <hr>
-                    <p>$24.95</p>
-                </div>
-                <img src="images/6-pack.jpg" class="responsive" alt="promotional product">
-            </div>
-        <img src="images/Quote.svg" class="col-span-full m-col-start-3 m-col-end-5 l-col-start-6 l-col-end-8" id="quotation" alt="quotation mark">
-        <h4 class="col-span-full m-col-start-3  m-col-end-11 l-col-start-6 l-col-end-12 ">
-            This drink is such a good way for me to get that extra nourishment in... I literally cannot get enough."
-        </h4>
+    <section class="full-width-grid-con" id="notFound">
+        <h2 class="hidden">This is for Page 404</h2>
+      
+            <img class="col-span-full"
+            sizes="100vw"
+            srcset="
+            images/error_qdex5f_c_scale,w_200.jpg 200w,
+            images/error_qdex5f_c_scale,w_536.jpg 536w,
+            images/error_qdex5f_c_scale,w_783.jpg 783w,
+            images/error_qdex5f_c_scale,w_955.jpg 955w,
+            images/error_qdex5f_c_scale,w_1079.jpg 1079w,
+            images/error_qdex5f_c_scale,w_1157.jpg 1157w,
+            images/error_qdex5f_c_scale,w_1200.jpg 1200w"
+            src="images/error_qdex5f_c_scale,w_1200.jpg"
+            alt="Page Not Found" id="error">
+           
         
-        <img src="images/analyst.jpg" class="testimonialUser col-start-1 col-end-2   m-col-start-3 m-col-end-5 l-col-start-6 l-col-end-7" alt="user of product">
-
-        <h5 class="col-start-2 col-end-4 m-col-start-5  m-col-end-11 l-col-start-7 l-col-end-12">Maye D.</h5>
-        <p class="col-start-2 col-end-5 m-col-start-5  m-col-end-11 l-col-start-7 l-col-end-12 testimoneeJob">Obsessed with Quatro Grapefruit Burst</p>
-
     </section>
-
-
+   
     </main>
     <footer id="footer-con">
         <div class="grid-con">
@@ -192,6 +123,8 @@
 
          </div>
     </footer>  
+
+   
     <script src="js/main.js"></script>
 </body>
 </html>
