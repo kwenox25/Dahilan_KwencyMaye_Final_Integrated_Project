@@ -12,10 +12,6 @@ Lastly, the contact page serves as a means for customers to get in touch with th
 
 No installation is needed for this site. HTMLs will work on any browsers.
 
-## Usage
-
-TODO: Write usage instructions
-
 ## Contributing
 
 1. Fork it!
