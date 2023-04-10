@@ -1269,6 +1269,10 @@
      #burger-con ul li:last-child {
         margin-right: 0;
      }
+
+     #main-nav ul li:last-child {
+        display: none;
+     }
   
      #main-nav {
         
